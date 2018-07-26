@@ -32,7 +32,7 @@ static int pop(void)
 
 void resetvm(void)
 {
-    memset(stk, 0, STK);
+    memset(stk, 0, sizeof(stk));
     sp = STK-1;
     pc = resetpc;
 }
