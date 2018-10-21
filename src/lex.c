@@ -173,7 +173,14 @@ static struct {
 	char *name;
 	int token;
 } keywords[] = {
-	{ "Function", LFUNCTION }, { "MoveTo", LMOVETO }, { "Move", LMOVE }, { "Call", LCALL }, { "Draw", LDRAW }, { "Rotate", LROTATE }, { "Loop", LLOOP }, { "Color", LCOLOR },
+	{ "Function", LFUNCTION },
+	{ "MoveTo", LMOVETO },
+	{ "Move", LMOVE },
+	{ "Call", LCALL },
+	{ "Draw", LDRAW },
+	{ "Rotate", LROTATE },
+	{ "Loop", LLOOP },
+	{ "Color", LCOLOR },
 };
 
 static int lookup(char *s)
