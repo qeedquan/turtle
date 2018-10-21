@@ -75,11 +75,11 @@ static void pcode(int pc)
 		printf("ret");
 		break;
 
-	case OSBGTR:
+	case OBGTR:
 		printf("bgtr %d", a1);
 		break;
 
-	case OSDECBRA:
+	case ODECBRA:
 		printf("decbra %d", a1);
 		break;
 
@@ -142,13 +142,13 @@ void execute(void)
 			fetch();
 			break;
 
-		case OSBGTR:
+		case OBGTR:
 			t = fetch();
 			if (stk[sp + 1] <= 0)
 				pc += t;
 			break;
 
-		case OSDECBRA:
+		case ODECBRA:
 			stk[sp + 1]--;
 			pc += fetch();
 			break;

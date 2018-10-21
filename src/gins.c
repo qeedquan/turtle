@@ -162,7 +162,7 @@ void rcall(char *fname)
 void gbloop(int n)
 {
 	emit(2, OPUSH, n);
-	emit(2, OSBGTR, 0);
+	emit(2, OBGTR, 0);
 
 	if (loopstkpos >= loopstklen) {
 		loopstklen *= 2;
@@ -180,7 +180,7 @@ void geloop(void)
 	l = cins->pos - p;
 
 	cins->buf[p] = l + 1;
-	emit(2, OSDECBRA, -(l + 3));
+	emit(2, ODECBRA, -(l + 3));
 	emit(1, OPOP);
 }
 

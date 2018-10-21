@@ -26,7 +26,12 @@ static struct {
 	char *name;
 	long val;
 } colors[] = {
-	{ "White", 0xFFFFFF }, { "Black", 0x000000 }, { "Red", 0x0000FF }, { "Green", 0x00FF00 }, { "Blue", 0xFF0000 }, { "Yellow", 0xFFFF00 },
+	{ "White", 0xFFFFFF },
+	{ "Black", 0x000000 },
+	{ "Red", 0x0000FF },
+	{ "Green", 0x00FF00 },
+	{ "Blue", 0xFF0000 },
+	{ "Yellow", 0xFFFF00 },
 };
 
 long lookupcolor(const char *c)

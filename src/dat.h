@@ -25,20 +25,19 @@ struct Func {
 	Func *link;
 };
 
-enum { OHLT,
-       OPUSH,
-       OPOP,
-       OSDECBRA,
-       OSBGTR,
-
-       OCALL,
-       ORET,
-
-       OROTATE,
-       ODRAW,
-       OCOLOR,
-       OMOVE,
-       OMOVETO,
+enum {
+	OHLT,
+	OPUSH,
+	OPOP,
+	ODECBRA,
+	OBGTR,
+	OCALL,
+	ORET,
+	OROTATE,
+	ODRAW,
+	OCOLOR,
+	OMOVE,
+	OMOVETO,
 };
 
 extern int tflag;
